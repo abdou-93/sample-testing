@@ -1,6 +1,8 @@
 package com.appscorner.samples;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.Timeout;
 
 import java.math.BigInteger;
 
@@ -8,7 +10,6 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.MatcherAssert.*;
 
 public class MathTestTimedPerTest {
-
     @Test(timeout = 1000)
     public void testSlowFactorial10() throws Exception {
         final Math math = new Math();
