@@ -11,7 +11,8 @@ import static org.hamcrest.MatcherAssert.*;
 
 public class MathTestTimedPerTest {
 
-    @Test(timeout = 2000)
+    int x;
+    @Test(timeout = 1000)
     public void testSlowFactorial10() throws Exception {
         final Math math = new Math();
         assertThat("Addition", math.slowFactorial(10), is(BigInteger.valueOf(3628800)));
